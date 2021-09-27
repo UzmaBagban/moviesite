@@ -1,0 +1,161 @@
+
+  body{margin:0px;color:white;font-size: 20px;background-color: black;}
+  #top-header{position: sticky;top:0;height:70px;background: black;opacity:0.9;text-align: center;color:white;}
+  .top-img img{width:100%;height:400px;background-color:black;}
+.top-img .text{
+   position: absolute;
+   z-index: 999;
+   margin: 0 auto;
+   left: 0;
+   right: 0;
+   top: 37%; /* Adjust this value to move the positioned div up and down */
+   text-align: center;
+   width: 60%; /* Set the width of the positioned div */
+   letter-spacing:10px;
+   font-size:22px;
+}
+.content{width:cover;height:auto;padding-bottom: 50px;overflow: auto;background-color: black;}
+.left_content{width:70%;min-height:800px;float:left;background-color: black;}
+.right_content{width:25%;min-height:2370px;float:left;background-color: black;}
+.game1 {margin-top:7%;margin-left:7%;margin-right:7%;width:80%;min-height:400px;height:auto;background-color:black;}
+.game1 img{width:50%;height:400px;float:left;padding-right:5%;}
+.game1 h1{text-align: justify;margin-bottom: -20px;color:red;}
+.game1 p{padding-left: 5%;padding-right: 1%;}
+
+.game2 {margin-top:7%;margin-left:7%;margin-right:7%;width:80%;min-height:400px;height:auto;background-color:black;}
+.game2 img{width:50%;height:400px;float:right;padding-left: 5%;}
+.game2 h1{margin-bottom: -20px;color:red;}
+.game2 p{padding-right: 5%;padding-left: 1%;}
+
+.categories{min-height:100px ;width: auto;background-color: #1a1a1a;padding-right: 0px;padding-bottom: 31px;}
+.categories ul{list-style-type:none;}
+.categories a{text-decoration: none;color:white;}
+.categories a:hover{color:red;font-size: 22px;}
+.categories li{color: white;margin-bottom:3%;padding: 3%;margin-right: 20%;height: auto;background-color: #404040;}
+.categories li:hover{padding-right: 10%;margin-right:10%;}
+.categories h2{margin-left: 24%;margin-top: 15%;}
+
+.trending_post{background-color: #1a1a1a;}
+.trending_post h2{margin-left: 24%;margin-top: 15%;}
+.trending_post img{width:80px;height:80px;}
+.trending_post p{text-align: justify;font-size: 15px;}
+.trending_post ul{list-style-type: none;}
+
+.bottom{width: 100%;height:auto;padding-bottom: 50px;background-color: black;align-items: center;
+  display: flex;
+  justify-content: center;}
+.bottom-mid{width:350px;height:200px;background-color: black;}
+.socials img{width:45%;height:10%;}
+.socials img:hover{width:50%;height:10%;}
+.socials td{text-align: center;padding: 10px;}
+.info td{text-align: center;padding-left: 30px;padding-right: 30px;}
+.info tr{width:100%;background-color: ;}
+.info a{text-decoration: none;color:red;}
+
+.search-container{display: flex;justify-content: center;background-color: #4d4d4d;width:auto;height: 60px;margin: 40px 80px 40px;opacity: 0.8;}
+.search-container form{width: 100%;padding-left: 50px;}
+.search-container input{width:80%;height:40px;background-color: white;font-size: 20px;}
+.search-container input:hover{border:1px solid black;}
+.search-container button {
+  padding: 12px 17px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+.search-container button:hover{border:1px solid red;}
+.game-details {width:cover;min-height: 500px;margin: 20px 80px 40px;padding-bottom: 70px;}
+.game-details-pic img{float:left;min-width: 200px;min-height:200px;max-height: 500px;margin-right: 20px;}
+.game-details p{text-align: justify;padding: 0px 20px 20px 20px;}
+.game-details h2{color:white;letter-spacing: 2px;font-size: 40px;color:red;}
+.game-details-video{width:100%;min-height: 350px;margin-top: 30px;}
+iframe{width:100%;min-height:350px;}
+.post_comment{text-align: center;background-color: black;width:cover;min-height:300px;margin-left: 15%;margin-right: 15%;}
+.post_comment h2{text-align: center;color:red;letter-spacing: 2px;}
+.post_comment form{background-color: #333333;padding-left: 40px;padding-right: 40px;padding-top: 20px;}
+.post_comment input{width:100%;height:30px;margin-bottom: 10px;}
+.post_comment textarea{width: 100%;height:100px;}
+.post_comment button{text-align: center;background-color: red;width:auto;height:40px;margin-top: 20px;}
+.post_comment button:hover{color:white;background-color: #b30000;}
+::placeholder{font-size: 20px;text-align: center;}
+
+
+/*navbar*/
+        .dropdown:hover .dropdown-menu {
+            display: block;
+            margin-top: 0;
+        }
+
+
+
+        nav {
+            background: rgba(20, 20, 20, 0.5) !important;
+            height: 80px;
+
+
+        }
+
+        .dropdown-menu {
+            background: rgba(20, 20, 20, 0.5) !important;
+        }
+
+        #ab {
+            color: white;
+            margin-right: 10px;
+            padding-right: 50px;
+            justify-content: center;
+        }
+.dropdown-item:hover {
+            background-image: linear-gradient(to right, red, rgb(189, 189, 218));
+        }
+
+        /*end*/
+
+@media only screen and (max-width: 800px) {
+  html,body{overflow-x: hidden;}
+.top-img .text{top:25%;}
+.content{overflow-x:hidden;width:cover;display: block;height: auto;overflow: auto;}
+.left_content{width:100%;padding-left: 0px;}
+.right_content{width:100%;min-height:200px;padding-bottom: 50px;float: right;}
+.game1 {margin-left:5%;margin-right:2%;width:90%;min-height:300px;}
+.game1 img{width:55%;height:270px;float:left;padding-right:3%;}
+.game1 h2,.game2 h2{font-size: 100%;text-align: justify;margin-bottom: 20px; padding-bottom:20px; color:red;}
+.game1 p,.game2 p{padding-left: 0px;padding-right: 0px;}
+.game2 {margin-left:5%;margin-right:2%;width:90%;min-height:100px;}
+.game2 img{width:55%;height:270px;float:right;padding-left: 3%;}
+.categories h2,.trending_post h2{margin-left:30%;margin-top: 15%;font-size: 33px;}
+.categories li{margin-left: 7%;}
+.trending_post p{font-size: 16px;}
+.trending_post table{padding-left:7%;padding-right: 7%;}
+.bottom{align-items: center;
+  display: flex;
+  justify-content: center;}
+.bottom-mid{width:cover;height:200px;background-color: black;}
+.socials img{width:45%;height:5%;}
+
+}
+
+@media only screen and (max-width: 800px)
+{
+  .search-container input{width:70%;height: 40px;float:left;}
+  .search-container button{margin-left: 10px;float: left;margin-top:1px;}
+  .search-container{padding-left: -10px;padding-right: -10px;width:80%;margin-left: 40px;}
+  .search-container form{padding: 2px;}
+  .game-details {width:85%;min-height: 500px;margin: 10px 30px 10px;padding-bottom: 70px;}
+  .game-details-pic img{width: 100%;min-height:200px;max-height: 500px;margin-right: 0px;}
+  .game-details h2{text-align: center;letter-spacing: 5px;position: relative;top:20px;}
+
+
+
+}
+@media only screen and (width:1024px)
+{
+  .top-img .text{top:10%;}
+}
+@media only screen and (max-width:360px)
+{
+  .search-container input{width:60%;}
+  .search-container button{width:20%;}
+}

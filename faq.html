@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/2631822da9.js" crossorigin="anonymous"></script>
+    <style>
+        /* footer */
+        footer {
+            background: #191919;
+            color: white;
+        }
+
+        #foot-cont {
+            margin-top: 2rem;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .footnotes {
+            width: 60%;
+        }
+
+        .footnotes ul {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .footnotes ul li {
+            width: 20%;
+            list-style: none;
+            margin: 0.5rem;
+        }
+
+        /*navbar*/
+        .dropdown:hover .dropdown-menu {
+            display: block;
+            margin-top: 0;
+        }
+
+
+
+        nav {
+            background: rgba(20, 20, 20, 0.5) !important;
+            height: 80px;
+
+
+        }
+
+        .dropdown-menu {
+            background: rgba(20, 20, 20, 0.5) !important;
+        }
+
+        #ab {
+            color: white;
+            margin-right: 10px;
+            padding-right: 50px;
+            justify-content: center;
+        }
+
+        /*end*/
+        body {
+            background-color: black;
+        }
+
+        /*head*/
+        .head {
+            background: url('image/about-bg.jpg');
+            min-height: 60vh;
+            backdrop-filter: blur(5px);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            text-align: center;
+        }
+
+        .head::before {
+            content: "";
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            z-index: -2;
+            background: rgb(0, 0, 0, 0.5);
+            display: block !important;
+        }
+
+        .head h1 {
+
+            font-weight: 500;
+            font-size: 3.157em;
+            color: #ffffff;
+            ;
+        }
+
+        .red {
+            display: block;
+            color: red;
+
+        }
+
+        .dropdown-item:hover {
+            background-image: linear-gradient(to right, red, rgb(189, 189, 218));
+        }
+
+        /*end*/
+
+        #container {
+            padding: 20px;
+        }
+
+        #b2 {
+            background-image: linear-gradient(to right, red, rgba(43, 41, 41, 0.481));
+
+            height: 80px;
+            border-color: black;
+            border: none;
+            text-align: left;
+            padding: 15px 15px 10px 15px;
+            color: white;
+        }
+
+        .collapse {
+            background-image: linear-gradient(to right, red, rgba(43, 41, 41, 0.481));
+            border-color: transparent;
+            color: white;
+            padding: 10px 20px 20px 20px;
+        }
+
+        #cf {
+            margin-top: 40px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-sm ">
+            <div class="container-fluid">
+                <div class="navbar-brand"><img class="logo-img" src="image/logo.png" alt="" srcset=""></div>
+                <ul class="navbar-nav ">
+                    <li class="nav-item ">
+                        <a class="nav-link" id="ab" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="ab" href="movies.html">MOVIES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="ab" href="tv.html">TV SHOWS</a>
+                    </li>
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link" id="ab" data-bs-toggle="dropdown" href="#">BLOG</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="blog.html">BLOG</a></li>
+                            <li><a class="dropdown-item" href="blogde.html">BLOG DETAILS</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" id="ab" data-bs-toggle="dropdown" href="index.html">PAGES</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="about.html">ABOUT US</a></li>
+                            <li><a class="dropdown-item" href="contact.html">CONTACT</a></li>
+                            <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
+                            <li><a class="dropdown-item" href="policy.html">PRIVACY POLICY</a></li>
+                            <li><a class="dropdown-item" href="pricing.html">PRICING</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item" ">
+                        <a class=" nav-link" href="#"><i class="fa fa-search" aria-hidden="true"
+                            style="width:60%; color:red;">
+                        </i>
+                        </a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa fa-bell-o" style="width:200%; color:red;">
+                            </i>
+                        </a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa fa-user-o" aria-hidden="true"
+                                style="width:200%; color:red;"></i>
+                            </i>
+                        </a>
+
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+        <section class="head">
+            <h1>FAQ</h1>
+            <span class="red">Home > About Us</span>
+        </section>
+        <div class="container-fluid" id="cf">
+
+            <div class="container" id="container">
+                <a href="#demo" class="btn btn-primary btn-block shadow-none" data-toggle="collapse" id="b2">
+                    <h2>
+                        What is streamit?</h2>
+                </a>
+
+
+                <div id="demo" class="collapse">
+                    <hr style="background-color:white;">
+                    It is a long established fact that a reader will be distracted by the readable content of a page
+                    when
+                    looking at its
+                    layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,
+                    as
+                    opposed to using
+                    ‘Content here, content here’, making it look like readable English.
+                </div>
+            </div>
+
+            <div class="container" id="container">
+                <a href="#cell2" class="btn btn-primary btn-block shadow-none" data-toggle="collapse" id="b2">
+                    <h2>
+                        I am facing video playback issues. What do I do?</h2>
+                </a>
+
+
+                <div id="cell2" class="collapse">
+                    <hr style="background-color:white;">
+                    It is a long established fact that a reader will be distracted by the readable content of a page
+                    when
+                    looking at its
+                    layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,
+                    as
+                    opposed to using
+                    ‘Content here, content here’, making it look like readable English.
+                </div>
+            </div>
+            <div class="container" id="container">
+                <a href="#cell3" class="btn btn-primary btn-block shadow-none" data-toggle="collapse" id="b2">
+                    <h2>
+                        What benefits do I get with the packs?</h2>
+                </a>
+
+
+                <div id="cell3" class="collapse">
+                    <hr style="background-color:white;">
+                    It is a long established fact that a reader will be distracted by the readable content of a page
+                    when
+                    looking at its
+                    layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,
+                    as
+                    opposed to using
+                    ‘Content here, content here’, making it look like readable English.
+                </div>
+            </div>
+            <div class="container" id="container">
+                <a href="#cell4" class="btn btn-primary btn-block shadow-none" data-toggle="collapse" id="b2">
+                    <h2>
+                        How can I manage notifications?</h2>
+                </a>
+
+
+                <div id="cell4" class="collapse">
+                    <hr style="background-color:white;">
+                    It is a long established fact that a reader will be distracted by the readable content of a page
+                    when
+                    looking at its
+                    layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,
+                    as
+                    opposed to using
+                    ‘Content here, content here’, making it look like readable English.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container" id="foot-cont">
+            <div class="footnotes">
+                <ul>
+                    <li>Terms of Use </li>
+                    <li>Privacy-Policy</li>
+                    <li>FAQ</li>
+                    <li>Watch List</li>
+                </ul>
+                <div class="foot-desp">
+                    © 2021 STREAMIT. All Rights Reserved. All videos and shows on this platform are trademarks of,
+                    and
+                    all related images and content are the property of, Streamit Inc. Duplication and copy of this
+                    is
+                    strictly prohibited. All rights reserved.
+                </div>
+            </div>
+            <div class="footicons">Folow us:
+                <div class="icons">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter-square"></i>
+                    <i class="fab fa-google-plus"></i>
+                    <i class="fab fa-github"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

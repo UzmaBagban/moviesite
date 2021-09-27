@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+/*navbar*/
+
+.dropdown:hover .dropdown-menu {
+            display: block;
+            margin-top: 0;
+        }
+
+        
+        nav {
+            background: rgba(20, 20, 20, 0.5) !important;
+            height: 80px;
+
+
+        }
+
+        .dropdown-menu {
+            background: rgba(20, 20, 20, 0.5) !important;
+        }
+
+        #ab {
+            color: white;
+            margin-right: 10px;
+            padding-right: 50px;
+            justify-content: center;
+
+        }
+
+        .dropdown-item:hover {
+            background-image: linear-gradient(to right, red, rgb(189, 189, 218));
+        }
+
+/*end*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+    color: #D1D0CF;;
+    background:#141414;
+}
+
+
+
+ .head{
+     background: url('https://source.unsplash.com/1600x900/?movie,poster');
+     min-height: 90vh;
+     backdrop-filter: blur(5px);  
+     display: flex;
+     justify-content: flex-start;
+     align-items: center;
+    }
+    .movies-btn{
+     font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 9px 42px 9px 25px;
+    margin: auto 7rem;
+    transform: translateY(-8rem);
+    }
+    /* blockbuster */
+    .blockbuster{
+        margin-top: 4rem;
+    }
+    .container{
+        width: 85%;
+        margin: auto;
+    }
+    .item img{
+        height: 10rem;
+        z-index: -2;
+    }
+   
+    .description{
+        width: 50%;
+        margin: auto;
+        transform: translateY(-3rem);
+    
+    }
+    .owl-carousel{
+        margin-top: 2rem;
+    }
+    .item{
+        transition: all 0.3s;
+    }
+    .item:hover{
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+    /* footer */
+    footer{
+        background: #191919;
+    }
+    #foot-cont{
+        margin-top: 2rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .footnotes{
+        width: 60%;
+    }
+    .footnotes ul{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .footnotes ul li{
+        width: 20%;
+        list-style: none;
+        margin: 0.5rem;
+    }
+    .play-btn{
+        background-color: #bf000a;
+        width: 6rem;
+        border: transparent;
+        height: 2rem;
+        border-radius: 10px;
+        color: white;
+    }
